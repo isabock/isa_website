@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Isa Bock</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #fafaf8; --text: #1a1a1a; --muted: #6b7280;
+      --accent: #2d6a4f; --accent-light: #d8f3dc; --border: #e5e7eb;
+      --card: #ffffff; --max-w: 780px;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.6; font-size: 16px;
+      min-height: 100vh; display: flex; flex-direction: column;
+    }
+    nav {
+      position: sticky; top: 0; background: rgba(250,250,248,0.95);
+      backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); z-index: 100;
+    }
+    nav ul { display: flex; list-style: none; max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
+    nav a {
+      display: block; padding: 1rem 1.1rem; color: var(--muted);
+      text-decoration: none; font-size: 0.875rem; font-weight: 500;
+      letter-spacing: 0.02em; transition: color 0.15s;
+    }
+    nav a:hover, nav a.active { color: var(--accent); }
+    main { flex: 1; max-width: var(--max-w); width: 100%; margin: 0 auto; padding: 5rem 1.5rem; }
+    h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; }
+    h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
+    p { color: var(--muted); margin-bottom: 0; }
+    .pub-list { display: flex; flex-direction: column; gap: 1.5rem; }
+    .pub-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.25rem 1.5rem; transition: border-color 0.15s;
+    }
+    .pub-card:hover { border-color: var(--accent); }
+    .pub-meta { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+    .pub-venue {
+      display: inline-block; font-size: 0.75rem; font-weight: 600;
+      color: var(--accent); background: var(--accent-light);
+      padding: 0.1rem 0.5rem; border-radius: 4px; margin-top: 0.6rem;
+    }
+    .pub-links { margin-top: 0.75rem; display: flex; gap: 0.75rem; }
+    .pub-link {
+      font-size: 0.8rem; font-weight: 500; color: var(--accent);
+      text-decoration: none; border: 1px solid var(--accent);
+      padding: 0.2rem 0.6rem; border-radius: 4px; transition: background 0.15s, color 0.15s;
+    }
+    .pub-link:hover { background: var(--accent); color: #fff; }
+    footer {
+      text-align: center; padding: 2rem 1.5rem;
+      font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="cv.pdf" target="_blank">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Publications</h2>
+    <div class="pub-list">
+
+      <!-- <div class="pub-card">
+        <h3>Paper Title Goes Here</h3>
+        <p class="pub-meta">Isa Bock, Co-Author Name, Co-Author Name</p>
+        <span class="pub-venue">Conference / Journal Name 2025</span>
+        <div class="pub-links">
+          <a class="pub-link" href="#">PDF</a>
+          <a class="pub-link" href="#">arXiv</a>
+          <a class="pub-link" href="#">Code</a>
+        </div>
+      </div> -->
+
+      <div class="pub-card">
+        <h3>IODA-TC: Imaginary Out-of-Distribution
+Actions with Trajectory-Continuation Mapping</h3>
+        <p class="pub-meta">Isabella Bock, Elaine Schaertl Short</p>
+        <span class="pub-venue">In Proceedings of the 2026 ACM/IEEE International Conference on Human- Robot Interaction (HRI), March 2026.</span>
+        <div class="pub-links">
+          <a class="pub-link" href="BockHRI26.pdf" target="_blank">PDF</a>
+          <!-- <a class="pub-link" href="#">Poster</a> -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>&copy; 2026 Isabella Bock</footer>
+
+</body>
+</html>
